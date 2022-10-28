@@ -25,5 +25,31 @@ namespace XBlocks.Utils
         {
             rt.offsetMin = new Vector2(rt.offsetMin.x, bottom);
         }
+
+        public static float XMin(this RectTransform rt)
+        {
+            return rt.position.x - rt.rect.width / 2f;
+        }
+
+        public static float XMax(this RectTransform rt)
+        {
+            return rt.position.x + rt.rect.width / 2f;
+        }
+
+        public static float YMin(this RectTransform rt)
+        {
+            return rt.position.y - rt.rect.height / 2f;
+        }
+
+        public static float YMax(this RectTransform rt)
+        {
+            return rt.position.y + rt.rect.height / 2f;
+        }
+
+        public static Vector2 SetLength(this Vector2 v, float length)
+        {
+            v = v.normalized * Mathf.Abs(length);
+            return v;
+        }
     }
 }
