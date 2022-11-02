@@ -39,7 +39,7 @@ Shader "UI/Default_OverlayNoZTest"
             Cull Off
             Lighting Off
             ZWrite On
-            ZTest Off
+            ZTest On
             Blend SrcAlpha OneMinusSrcAlpha
             ColorMask[_ColorMask]
 
