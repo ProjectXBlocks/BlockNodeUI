@@ -221,8 +221,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5353929998872541599}
   - component: {fileID: 5353929998872541596}
-  - component: {fileID: 5353929998872541597}
   - component: {fileID: 5353929998872541598}
+  - component: {fileID: 8512379564639307316}
   m_Layer: 7
   m_Name: Node
   m_TagString: Untagged
@@ -260,23 +260,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5353929998872541592}
   m_CullTransparentMesh: 1
---- !u!114 &5353929998872541597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5353929998872541592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 067b980a34e104c4cbffca0ded9412e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: f9d3f4bb8a3ef5c49ab0295905672a4d, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  node: {fileID: 5353929998872541598}
 --- !u!114 &5353929998872541598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,3 +276,16 @@ MonoBehaviour:
   rect: {fileID: 5353929998872541599}
   knob: {fileID: 1596773034660659205}
   receivers: []
+  graphNode: {fileID: 8512379564639307316}
+--- !u!114 &8512379564639307316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5353929998872541592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e472dd4d13c064015845a4725cdbbec0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

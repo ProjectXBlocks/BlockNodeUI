@@ -7,7 +7,7 @@ namespace XBlocks.UI
 {
     [ExecuteAlways]
     [RequireComponent(typeof(RectTransform))]
-    [RequireComponent (typeof(NodeLinkRenderer))]
+    [RequireComponent (typeof(GraphNode))]
     [AddComponentMenu("Node/Node")]
     public class Node : MonoBehaviour
     {
@@ -16,9 +16,10 @@ namespace XBlocks.UI
 
         [Header("UI")]
         public RectTransform rect;
-        public Image knob; 
+        public Image knob;
 
         public List<Node> receivers = new List<Node>(); //only valid if node is a sender
+        public GraphNode graphNode;
 
         public enum NodeType
         {
@@ -40,6 +41,7 @@ namespace XBlocks.UI
         private void OnValidate()
         {
             if(rect == null) rect = GetComponent<RectTransform>();
+            if(graphNode == null) graphNode = GetComponent<GraphNode>();
         }
 #endif
     }
